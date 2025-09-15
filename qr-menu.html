@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X-Lanches - Escaneie o QR Code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    .qr-code {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 1rem;
+    }
+    .btn-menu {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-menu:hover {
+      background-color: #128c4a;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bem-vindo a Mari-Lanches!</h1>
+  <p>Escaneie o QR Code abaixo para acessar nosso menu digital:</p>
+
+  <img class="qr-code" 
+       src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://thales7gco7.github.io/X-lanches-site/" 
+       alt="QR Code do menu">
+
+  <p>Ou clique no botão abaixo para acessar diretamente:</p>
+  <a class="btn-menu" href="https://thales7gco7.github.io/X-lanches-site/" target="_blank">
+    Abrir Menu
+  </a>
+</body>
+</html>
+
+
